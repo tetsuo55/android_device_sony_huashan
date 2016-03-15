@@ -34,7 +34,6 @@ TARGET_CPU_VARIANT := krait
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm8960t
 TARGET_KERNEL_CONFIG := cm_viskan_huashan_defconfig
-TARGET_PREBUILT_KERNEL := device/sony/huashan/prebuilts/kernel
 
 # Kernel configurations
 BOARD_KERNEL_BASE  := 0x80200000
@@ -90,3 +89,18 @@ TW_HAS_NO_RECOVERY_PARTITION := true
 TW_MAX_BRIGHTNESS := 255
 TW_NO_SCREEN_BLANK := true
 TW_THEME := portrait_hdpi
+
+# MultiROM configuration
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/sony/huashan/multirom/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 216
+MR_FSTAB := device/sony/huashan/recovery.fstab
+MR_USE_MROM_FSTAB := true
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_DEVICE_VARIANTS := C5302 C5303 C5306
+MR_UNIFIED_TABS := true
+
+# MultiROM build
+DEVICE_RESOLUTION := 768x1280
+TARGET_RECOVERY_IS_MULTIROM := true
