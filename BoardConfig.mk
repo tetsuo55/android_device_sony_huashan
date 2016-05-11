@@ -94,6 +94,7 @@ TW_THEME := portrait_hdpi
 # MultiROM configuration
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/sony/huashan/multirom/mr_init_devices.c
+MR_ALLOW_NKK71_NOKEXEC_WORKAROUND := true
 MR_DPI := xhdpi
 MR_DPI_FONT := 216
 MR_FSTAB := device/sony/huashan/recovery.fstab
