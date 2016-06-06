@@ -1,6 +1,10 @@
 # Device configuration
 $(call inherit-product, device/sony/huashan/full_huashan.mk)
 
+# Prebuilts
+PRODUCT_COPY_FILES += \
+    device/sony/huashan/prebuilts/kernel:kernel
+
 # Release name
 PRODUCT_RELEASE_NAME := huashan
 
