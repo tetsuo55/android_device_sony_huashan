@@ -20,10 +20,13 @@ const char *mr_init_devices[] =
     // Inputs
     "/sys/devices/virtual/input*",
     "/sys/devices/virtual/misc/uinput",
-    "/sys/devices/i2c-3/3-0024/main_ttsp_core.cyttsp4_i2c_adapter/cyttsp4_mt.main_ttsp_core/input/input7*",
-    "/sys/devices/i2c-12/12-006b/input/input5*",
+    "/sys/devices/i2c-3/3-0024/main_ttsp_core.cyttsp4_i2c_adapter/cyttsp4_mt.main_ttsp_core/input/input*",
     "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-keypad/input*",
     "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-pwrkey/input*",
+    "/sys/devices/platform/gpio-keys.0/input/input*",
+    "/sys/class/input/event1",
+    "/sys/class/input/event7",
+    "/sys/class/input/event11",
 
     // ADB
     "/sys/class/tty/ptmx",
