@@ -12,3 +12,6 @@ allow system_server app_data_file:file unlink;
 
 # Hardware tunables.
 allow system_server sysfs_vibrator:file rw_file_perms;
+
+# System Server socket.
+allow system_server self:unix_stream_socket ioctl;
